@@ -1,0 +1,13 @@
+{
+  "@naturalcycles/generator-backend-service": {
+    "answers": {
+      "npmName": "chicken-timer",
+      "githubOrg": "kribor",
+      "githubRepoName": "chicken-timer",
+      "moduleAuthor": "Kristofer Borgström",
+      "npmNameWithoutScope": "chicken-timer",
+      "githubFullName": "kribor/chicken-timer",
+      "profile": "full"
+    }
+  }
+}
