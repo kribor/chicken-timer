@@ -1,12 +1,3 @@
-import { createDefaultApp } from '@naturalcycles/backend-lib'
-import { rootResource } from '@src/server/root.resource'
-import { sentryService } from '@src/srv/sentry.service'
+import express = require('express')
 
-export const expressApp = createDefaultApp(
-  {
-    resources: {
-      '/': rootResource,
-    },
-  },
-  sentryService,
-)
+export const expressApp = express()

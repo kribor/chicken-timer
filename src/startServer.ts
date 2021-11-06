@@ -21,7 +21,6 @@ import { expressApp } from '@src/express.app'
 import { warmup } from '@src/warmup'
 
 startServer({
-  bootstrapStartedAt,
   expressApp,
 })
   .then(() => warmup())
