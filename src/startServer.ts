@@ -3,6 +3,8 @@
 //
 // 1. Log 'startServer' and record `bootstrapStarted`
 //
+import {runScript} from "@naturalcycles/nodejs-lib/dist/script";
+
 console.log('startServer... ')
 const bootstrapStartedAt = Date.now()
 
@@ -18,13 +20,14 @@ import '@src/bootstrap'
 //
 import { startServer } from '@naturalcycles/backend-lib'
 import { expressApp } from '@src/express.app'
-import { warmup } from '@src/warmup'
+import {run} from "@src/server/timer.runner";
 
-startServer({
-  expressApp,
+
+runScript(async () => {
+
+    await run()
+
+    await startServer({
+        expressApp,
+    })
 })
-  .then(() => warmup())
-  .catch(err => {
-    console.error(err)
-    process.exit(1)
-  })

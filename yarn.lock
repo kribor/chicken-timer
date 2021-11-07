@@ -276,7 +276,7 @@
     through2-concurrent "^2.0.0"
     yargs "^17.0.0"
 
-"@naturalcycles/time-lib@^3.0.1":
+"@naturalcycles/time-lib@^3.0.1", "@naturalcycles/time-lib@^3.4.1":
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@naturalcycles/time-lib/-/time-lib-3.4.1.tgz#175cfe835b41faa335f264aaf7bd8df098e069cb"
   integrity sha512-6T56G+yc0bu/xMuSmDJiFvIxrB0KPGXudkF+d3PTNKogkw97B8aOpXVAt4+Now+qv2xylY8tIEYtm4OZwGPp7g==
@@ -1665,7 +1665,7 @@ jose@^2.0.5:
   dependencies:
     "@panva/asn1.js" "^1.0.0"
 
-js-yaml@^4.0.0:
+js-yaml@^4.0.0, js-yaml@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
   integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
