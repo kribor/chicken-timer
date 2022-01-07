@@ -21,11 +21,13 @@ import '@src/bootstrap'
 import { startServer } from '@naturalcycles/backend-lib'
 import { expressApp } from '@src/express.app'
 import {run} from "@src/server/timer.runner";
+import {config} from "@src/srv/config.service";
 
+process.env.TZ = config.timezone
 
 runScript(async () => {
 
-    await run()
+    await run() //This is not how to do it, rethink
 
     await startServer({
         expressApp,

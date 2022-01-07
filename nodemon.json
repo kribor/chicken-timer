@@ -4,7 +4,6 @@
   "ext": "ts,js,json",
   "ignore": ["node_modules", "src/**/*.test.ts"],
   "env": {
-    "TZ": "UTC",
     "DEBUG": "app*,nc:*",
     "NODE_ENV": "development"
   },

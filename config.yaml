@@ -1,9 +1,12 @@
 latitude: 60.025369
 longitude: 17.669363
-hours_of_full_light: 12
-minutes_of_sunrise: 60 # interval for dimming between 0 and 100% (both sunrise and sundown)
+hours_of_full_light: 10
+minutes_of_sunrise: 120 # interval for dimming between 0 and 100% (both sunrise and sundown)
 start_artificial_light: november # Month to start artificial lighting
 end_artificial_light: april # Month to start artificial lighting
-max_sun_angle: 5 # degrees over the horizon at which time light can be turned off as it's light-enough anyway
+max_sun_angle: 7 # degrees over the horizon at which time light can be turned off as it's light-enough anyway
+fake_noon_hour: 11
 dimmer_controller: telldus
+dimmer_step: 3
 light_dimmer_id: 9611251
+timezone: Europe/Stockholm

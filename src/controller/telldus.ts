@@ -29,6 +29,16 @@ export class TelldusController implements Controller {
             throw Error(`dimLight received unexpected response: ${r}`)
         }
     }
+
+    async toggleLight(on: boolean, cfg: ChickenTimerConfig) {
+        const uri: string = on ? `device/turnOn?id=${cfg.light_dimmer_id}}` : `device/turnOff?id=${cfg.light_dimmer_id}}`
+
+        const r = await telldusGot.get(uri).json<TelldusStatus>()
+        if (r.status != 'success') {
+            throw Error(`dimLight received unexpected response: ${r}`)
+        }
+    }
+
 }
 
 export const telldus = new TelldusController()
